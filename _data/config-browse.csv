@@ -1,5 +1,8 @@
-field,display_name,btn
-eser_adi,Eser Adı,true
-date,Tarih,true
-muellif_olum_tarihi,Müellif Ölüm Tarihi,true
-padisah_donemi,Padişah Dönemi,true
+field,display_name,btn,hidden,sort_name
+title,Müellif,true,false,Müellif Adı
+eser_adi,Eser Adı,true,false,Eser Adı
+telif_tarih_miladi,Tarih,false,false,Tarih
+muellif_olum_tarihi,Müellif Ölüm Tarihi,false,false,
+padisah_donemi,Padişah Dönemi,true,false,
+eser_alt_turu,Eser Alt Türü,true,true,
+kutupane_koleksiyon,Kütüphane,true,true,
