@@ -11,7 +11,7 @@
 
 var items = [
     {% for i in items %}
-    { "title":{{ i.title | strip | jsonify }}, "muellif_adi":{{ i.muellif_adi | strip | jsonify }}, "telif_tarih_miladi":{{ i.telif_tarih_miladi | strip | jsonify }}, "muellif_olum_tarihi":{{ i.muellif_olum_tarihi | strip | jsonify }}, "padisah_donemi":{{ i.padisah_donemi | strip | jsonify }}, "format":{% if i.format %}{{ i.format | jsonify }}{% else %}""{% endif %}, {% if i.youtubeid %} "youtube": {{ i.youtubeid | jsonify }}, {% endif %}{% if i.filename contains '/' %}"filename": "{{ i.filename }}" {% else %}"filename":"{{ '/objects/' | relative_url | append: i.filename }}"{% endif %}, "link": "{% if i.parentid %}{{ i.parentid }}#{{ i.objectid }}{% else %}{{ i.objectid }}{% endif %}", "id":{{ i.objectid | jsonify }} }{% unless forloop.last %},{% endunless %}{% endfor %}
+    { "title":{{ i.title | strip | jsonify }}, "muellif_adi":{{ i.muellif_adi | strip | jsonify }}, "eser_adi":{{ i.eser_adi | strip | jsonify }}, "telif_tarih_miladi":{{ i.telif_tarih_miladi | strip | jsonify }}, "muellif_olum_tarihi":{{ i.muellif_olum_tarihi | strip | jsonify }}, "padisah_donemi":{{ i.padisah_donemi | strip | jsonify }}, "format":{% if i.format %}{{ i.format | jsonify }}{% else %}""{% endif %}, {% if i.youtubeid %} "youtube": {{ i.youtubeid | jsonify }}, {% endif %}{% if i.filename contains '/' %}"filename": "{{ i.filename }}" {% else %}"filename":"{{ '/objects/' | relative_url | append: i.filename }}"{% endif %}, "link": "{% if i.parentid %}{{ i.parentid }}#{{ i.objectid }}{% else %}{{ i.objectid }}{% endif %}", "id":{{ i.objectid | jsonify }} }{% unless forloop.last %},{% endunless %}{% endfor %}
 ];
 
 function makeCard(obj) {
@@ -20,7 +20,7 @@ function makeCard(obj) {
     card += '<div class="card-body">';
     card += '<h5 class="card-title"><a href="' + itemHref + '" class="text-dark">' + (obj.muellif_adi || "Müellif Bilinmiyor") + '</a></h5>';
     card += '<hr>';
-    if(obj.title) card += '<p class="mb-1"><small><strong>Eser:</strong> ' + obj.title + '</small></p>';
+    if(obj.eser_adi) card += '<p class="mb-1"><small><strong>Eser:</strong> ' + obj.eser_adi + '</small></p>';
     if(obj.telif_tarih_miladi) card += '<p class="mb-1"><small><strong>Telif:</strong> ' + obj.telif_tarih_miladi + '</small></p>';
     if(obj.muellif_olum_tarihi) card += '<p class="mb-1"><small><strong>Ölüm:</strong> ' + obj.muellif_olum_tarihi + '</small></p>';
     if(obj.padisah_donemi) card += '<p class="mb-1"><small><strong>Dönem:</strong> ' + obj.padisah_donemi + '</small></p>';
