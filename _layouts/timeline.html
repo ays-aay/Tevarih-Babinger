@@ -32,11 +32,8 @@ custom-foot: js/timeline-js.html
     </div>
 </div>
 {%- endif -%}
-
 {{ content }}
-
-<h3><a href="#y{{ uniqueYears | first }}">{{ uniqueYears | first }}</a> - <a href="#y{{ uniqueYears | last }}">{{ uniqueYears | last }}</a></h3>
-
+<h3><a href="#y{{ uniqueYears | first }}" style="color:inherit;">{{ uniqueYears | first }}</a> - <a href="#y{{ uniqueYears | last }}" style="color:inherit;">{{ uniqueYears | last }}</a></h3>
 <table id="timeline" class="table table-striped">
     <tbody>
         {% for year in uniqueYears %}
@@ -49,14 +46,14 @@ custom-foot: js/timeline-js.html
                     {%- assign inYear = items | where_exp: 'item', 'item[field] contains year' -%}
                     {% for item in inYear %}
                     <div class="col-lg-4 col-md-6 mb-2">
-                        <a href="{{ '/item.html' | relative_url | append: '?id=' | append: item.objectid }}" style="text-decoration:none;">
+                        <a href="{{ '/item.html' | relative_url | append: '?id=' | append: item.objectid }}" style="text-decoration:none; color:inherit;">
                             <div class="card h-100">
                                 <div class="card-body">
-                                    <h6 class="card-title text-dark">{{ item.muellif_adi | default: "Müellif Bilinmiyor" }}</h6>
+                                    <h6 class="card-title" style="color:#1a1a1a;">{{ item.muellif_adi | default: "Müellif Bilinmiyor" }}</h6>
                                     <hr>
-                                    {% if item.eser_adi %}<p class="mb-1"><small><strong style="color:#8B6914;">Eser Adı:</strong> {{ item.eser_adi }}</small></p>{% endif %}
-                                    {% if item.muellif_olum_tarihi %}<p class="mb-1"><small><strong style="color:#8B6914;">Müellif Ölüm Tarihi:</strong> {{ item.muellif_olum_tarihi }}</small></p>{% endif %}
-                                    {% if item.padisah_donemi %}<p class="mb-1"><small><strong style="color:#8B6914;">Padişah Dönemi:</strong> {{ item.padisah_donemi }}</small></p>{% endif %}
+                                    {% if item.eser_adi %}<p class="mb-1"><small><strong style="color:#8B6914;">Eser Adı:</strong> <span style="color:#1a1a1a;">{{ item.eser_adi }}</span></small></p>{% endif %}
+                                    {% if item.muellif_olum_tarihi %}<p class="mb-1"><small><strong style="color:#8B6914;">Müellif Ölüm Tarihi:</strong> <span style="color:#1a1a1a;">{{ item.muellif_olum_tarihi }}</span></small></p>{% endif %}
+                                    {% if item.padisah_donemi %}<p class="mb-1"><small><strong style="color:#8B6914;">Padişah Dönemi:</strong> <span style="color:#1a1a1a;">{{ item.padisah_donemi }}</span></small></p>{% endif %}
                                 </div>
                                 <div class="card-footer text-end">
                                     <small style="color:#8B6914; font-weight:bold;">Detay →</small>
