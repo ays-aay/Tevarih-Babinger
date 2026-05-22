@@ -1,4 +1,5 @@
-{%- assign items = site.data[site.metadata] -%}
-<div class="row" id="browse-items"></div>
-
-{% include cb/js/browse-js.html %}
+<div class="card p-3 mb-3">
+  <h4 class="card-title">Objects</h4>
+  {%- assign items = site.data[site.metadata] -%}
+  <p>{{ items | size }} Records <a href="{{ '/browse.html' | relative_url }}" class="btn btn-sm btn-outline-warning ms-2">View table</a></p>
+</div>
