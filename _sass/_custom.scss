@@ -1,44 +1,40 @@
-/* --- Altın Sarısı ve Bordo Uyumu (Güçlendirilmiş) --- */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap');
 
-/* Üstteki gri alanı temizleyip bordo-altın yapalım */
+/* --- Altın Sarısı ve Bordo Uyumu (Güçlendirilmiş) --- */
 .p-5.mb-4.bg-light.rounded-3, .jumbotron {
-    background-color: #fdfaf5 !important; /* Banner arka planı yumuşak krem */
-    border: 2px solid #D4A017 !important; /* Altın çerçeve */
-    border-left: 15px solid #8B0000 !important; /* Sol tarafa kalın bordo hat */
+    background-color: #fdfaf5 !important;
+    border: 2px solid #D4A017 !important;
+    border-left: 15px solid #8B0000 !important;
 }
 
-/* Navbar altındaki altın çizgiyi kalınlaştıralım */
 .navbar {
     background-color: #8B0000 !important;
-    border-bottom: 5px solid #D4A017 !important; /* 3px yerine 5px altın şerit */
+    border-bottom: 5px solid #D4A017 !important;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-/* "Learn More" gibi butonları altın sarısı yapalım */
 .btn-primary, .btn-success {
-    background-color: #D4A017 !important; /* Buton artık altın sarısı */
+    background-color: #D4A017 !important;
     border-color: #B8860B !important;
-    color: #2C1810 !important; /* Üstündeki yazı koyu kahve */
+    color: #2C1810 !important;
     font-weight: bold !important;
 }
 
-/* Butona basınca bordo olsun */
 .btn-primary:hover, .btn-success:hover {
     background-color: #8B0000 !important;
     color: #ffffff !important;
 }
 
-/* Kartların üstüne ince bir altın çizgi atalım */
 .card {
     border-top: 4px solid #D4A017 !important;
 }
-/* --- Font ve Boşluk İyileştirmeleri --- */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap');
 
+/* --- Font ve Boşluk İyileştirmeleri --- */
 body {
     font-family: 'Source Serif 4', Georgia, serif !important;
     font-weight: 300;
     line-height: 1.7;
+    background-color: #f5f0e8 !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
