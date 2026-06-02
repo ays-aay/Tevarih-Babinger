@@ -29,9 +29,21 @@ $theme-colors: map-merge(
 {% endif %}
 @import "base", "pages", "custom";
 
-/* --- Arka plan --- */
+/* --- Fontlar --- */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap');
+
 body {
   background-color: #f5f0e8;
+  font-family: 'Source Serif 4', Georgia, serif !important;
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-weight: 700 !important;
+  margin-bottom: 0.8rem !important;
 }
 
 /* --- Banner --- */
@@ -42,44 +54,48 @@ body {
   background-position: center top !important;
 }
 
+.display-4 {
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 4rem !important;
+  font-weight: 700 !important;
+}
+
+.lead {
+  font-size: 1.2rem !important;
+  font-weight: 400 !important;
+}
+
 /* --- Kartlar --- */
 .card {
   background-color: rgba(255, 255, 255, 0.95);
 }
 
-/* --- Navbar linkleri --- */
+/* --- Navbar --- */
 .navbar-nav .nav-link {
-    color: rgba(255, 255, 255, 0.85) !important;
-    font-weight: 500 !important;
+  color: rgba(255, 255, 255, 0.85) !important;
+  font-weight: 500 !important;
+  font-family: 'Source Serif 4', Georgia, serif !important;
 }
 
 .navbar-nav .nav-link.active {
-    color: #ffffff !important;
-    font-weight: 700 !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
 }
 
-/* --- Banner başlık ve alt yazı --- */
-.display-4 {
-    font-size: 4rem !important;
+/* --- Sayfa içeriği --- */
+.container, .container-fluid {
+  max-width: 860px !important;
 }
 
-.lead {
-    font-size: 1.3rem !important;
-    font-weight: 400 !important;
+.page-content h2, .col-md-8 h2, main h2 {
+  margin-top: 2rem !important;
+  margin-bottom: 1rem !important;
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-weight: 700 !important;
 }
 
-/* --- Sayfa başlıkları ve metin boşlukları --- */
-.page-item-title, h1.page-title {
-    margin-bottom: 1.5rem !important;
-    margin-top: 1rem !important;
-}
-
-.page-content h2 {
-    margin-top: 2rem !important;
-    margin-bottom: 1rem !important;
-}
-
-.page-content p {
-    margin-bottom: 1rem !important;
-    line-height: 1.8 !important;
+.page-content p, .col-md-8 p, main p {
+  margin-bottom: 1rem !important;
+  line-height: 1.8 !important;
+  font-family: 'Source Serif 4', Georgia, serif !important;
 }
