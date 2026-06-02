@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap');
 
-/* --- Altın Sarısı ve Bordo Uyumu (Güçlendirilmiş) --- */
+/* --- Renkler --- */
 .p-5.mb-4.bg-light.rounded-3, .jumbotron {
     background-color: #fdfaf5 !important;
     border: 2px solid #D4A017 !important;
@@ -11,6 +11,11 @@
     background-color: #8B0000 !important;
     border-bottom: 5px solid #D4A017 !important;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.85) !important;
+    font-weight: 500 !important;
 }
 
 .btn-primary, .btn-success {
@@ -29,7 +34,7 @@
     border-top: 4px solid #D4A017 !important;
 }
 
-/* --- Font ve Boşluk İyileştirmeleri --- */
+/* --- Fontlar --- */
 body {
     font-family: 'Source Serif 4', Georgia, serif !important;
     font-weight: 400;
@@ -45,7 +50,6 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
     margin-bottom: 0.6rem !important;
-    font-weight: 400 !important;
 }
 
 .card-title {
@@ -56,8 +60,8 @@ p {
     font-family: 'Source Serif 4', serif !important;
     font-size: 0.95rem !important;
     line-height: 1.6 !important;
-    font-weight: 400 !important;
 }
+
 .display-4 {
     font-size: 4rem !important;
 }
@@ -65,8 +69,4 @@ p {
 .lead {
     font-size: 1.3rem !important;
     font-weight: 400 !important;
-}
-.navbar-nav .nav-link {
-    color: rgba(255, 255, 255, 0.85) !important;
-    font-weight: 500 !important;
 }
