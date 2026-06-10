@@ -24,11 +24,10 @@ Proje için ilk aşamada üç temel kaynak türü seçilmiştir: **Tevârih** (O
 
 *Alt Projeler:*  
 (DBB-M-Tevârih) Osmanlı Tevârih Eserleri — Yürütücü: Ayşegül Çimen  
-(DBB-M-Seyahatname) Osmanlı Coğrafyasında Seyahatnameler — Yürütücüler: Serpil Özcan, Özge Eda Kaya  
-(DBB-M-Hatırât) Osmanlı'dan Cumhuriyete Hatırât Eserleri — Yürütücü: Rümeysanur Doğan
+[(DBB-M-Seyahatname) Osmanlı Coğrafyasında Seyahatnameler](https://seyahatname.dbbcdh.workers.dev/) — Yürütücüler: Serpil Özcan, Özge Eda Kaya  
+[(DBB-M-Hatırât) Osmanlı'dan Cumhuriyete Hatırât Eserleri](https://dbb-m.github.io/Hatirat/) — Yürütücü: Rümeysanur Doğan
 
 ---
-
 ## Tevarih Veri Tabanı: Babinger Derlemesi
 
 Franz Babinger'in *Osmanlı Tarih Yazarları ve Eserleri* (1927), yayımlanmasının üzerinden bir asra yakın zaman geçmiş olmasına karşın Osmanlı tarih yazımı araştırmalarında başvurulan temel eserlerden biri olmayı sürdürmektedir. Bununla birlikte eserin sınırlılıkları literatürde çokça tartışılmıştır: müellif biyografilerindeki eksiklikler, kütüphane bilgilerindeki hatalar, İstanbul dışındaki koleksiyonlara duyulan ilginin İstanbul nüshalarının gözden kaçmasına yol açması, Türkçe çevirisinin elli yılı aşkın bir gecikmeyle ve güncel literatürle desteklenmeksizin yayımlanmış olması bu eleştirilerin başında gelmektedir. Bu çalışma söz konusu eleştirilerin farkındadır. Tevarih, Babinger'in derleme eserine dayanır; bu nedenle siteyi araştırmalarında kullanacakların ilgili eserleri yazma eser kütüphanelerinde ve literatürde takip etmesi beklenmektedir.
