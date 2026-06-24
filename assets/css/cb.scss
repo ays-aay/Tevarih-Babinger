@@ -1,5 +1,5 @@
 body {
-  background-image: url('{{ "/assets/img/background.jpg" | relative_url }}') !important;
+  background-image: url('../img/background.jpg') !important;
   background-attachment: fixed !important;
   background-size: cover !important;
   background-position: center !important;
@@ -18,7 +18,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* --- Banner --- */
 #home-banner {
-  background-image: url('{{ "/assets/img/background.jpg" | relative_url }}') !important;
+  background-image: url('../img/background.jpg') !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
   background-position: 0% 30% !important;
