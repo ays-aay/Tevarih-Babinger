@@ -16,9 +16,9 @@ h1, h2, h3, h4, h5, h6 {
 /* --- Banner --- */
 #home-banner {
   background-image: url('../img/background.jpg') !important;
-  background-size: cover !important;
+  background-size: 100% !important;
   background-repeat: no-repeat !important;
-  background-position: center 15% !important;
+  background-position: center 30% !important;
 }
 .display-4 {
   font-family: 'Playfair Display', Georgia, serif !important;
@@ -40,7 +40,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* --- Navbar --- */
 .navbar.bg-dark {
-  background-color: #C47055 !important;
+  background-color: #8B1A1A !important;
 }
 .navbar-nav .nav-link {
   color: rgba(255, 255, 255, 0.9) !important;
@@ -53,20 +53,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* --- Butonlar --- */
 .btn-primary {
-  background-color: #d4a843 !important;
-  border-color: #d4a843 !important;
+  background-color: #8B1A1A !important;
+  border-color: #8B1A1A !important;
   color: #fff !important;
 }
 .btn-primary:hover {
-  background-color: #b8912e !important;
-  border-color: #b8912e !important;
+  background-color: #6b1414 !important;
+  border-color: #6b1414 !important;
 }
 .btn-outline-primary {
-  color: #C47055 !important;
-  border-color: #C47055 !important;
+  color: #8B1A1A !important;
+  border-color: #8B1A1A !important;
 }
 .btn-outline-primary:hover {
-  background-color: #C47055 !important;
+  background-color: #8B1A1A !important;
   color: #fff !important;
 }
 .btn-warning, .btn-outline-warning {
