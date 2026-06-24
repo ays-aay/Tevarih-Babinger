@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* --- Navbar --- */
-.navbar {
+.navbar.bg-dark {
   background-color: #8B1A1A !important;
 }
 
@@ -107,6 +107,11 @@ a:hover {
 /* --- Scroll to top gizle --- */
 #scroll-to-top {
   display: none !important;
+}
+
+/* --- Footer --- */
+footer.bg-dark {
+  background-color: #3a1a1a !important;
 }
 
 /* --- Sayfa içeriği girintisi --- */
